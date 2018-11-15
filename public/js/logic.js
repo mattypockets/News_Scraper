@@ -12,11 +12,11 @@ $(document).ready(function(){
         
             // If the article has not been saved, only the outline of a star shows
             if (result.saved === false) {
-                $('[data-imgid="' + result._id + '"]').append('<i data-id=' + result._id + ' class="material-icons notSelected">star_border</i>');
+                $('[data-titleid="' + result._id + '"]').append('<i data-id=' + result._id + ' class="material-icons notSelected">star_border</i>');
             } 
             // If the article has been saved, the star is filled out
             else {
-                $('[data-imgid="' + result._id + '"]').append('<i data-id=' + result._id + ' class="material-icons selected">star</i>');
+                $('[data-titleid="' + result._id + '"]').append('<i data-id=' + result._id + ' class="material-icons selected">star</i>');
             }
         })
     })
