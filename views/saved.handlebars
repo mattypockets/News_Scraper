@@ -1,0 +1,13 @@
+{{> nav/navbar-block}}
+<div class="container">
+    <!-- Div to display articles -->
+    <div class="row">
+        <div class="col s12">
+            <h3>Saved Articles</h3>
+            {{#each article}}
+                {{> article/article-block}}
+            {{/each}}
+
+        </div>
+    </div>
+</div>  

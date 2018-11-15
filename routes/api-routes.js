@@ -16,13 +16,11 @@ module.exports = function(app){
             let title = $(element).find("header").find("a").first().text();
             let link = $(element).find("header").find("a").attr("href");
             let summary = $(element).find(".item__content").find(".entry-summary").find("p").first().text();
-            let image = $(element).find(".item__content").find("figure").find("a").find(".img-wrapper").find("picture").find("source:nth-child(2)").attr("data-srcset")
 
             db.Article.create({
                 title: title,
                 link: link,
-                summary: summary,
-                image: image
+                summary: summary
             }). then(function(dbArticle){
                 console.log(dbArticle);
             }) .catch(function(err){
