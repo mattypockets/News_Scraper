@@ -1,10 +1,11 @@
 <div class="row article">
     {{!-- View Article Title and Summary --}}
     <div class="col s12">
-        <a href="{{this.link}}" target="_blank" data-titleid="{{this.id}}"><h4>{{this.title}}</h4></a>
+        <a href="{{this.link}}" target="_blank"><h4>{{this.title}}</h4></a>
         <div class="row">
             <div class="col s12">
                 <p>{{this.summary}}</p>
+                <h5 data-titleid="{{this.id}}">Click to save  </h5>
             </div>
         </div>
         <div class="row">
